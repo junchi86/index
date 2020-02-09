@@ -14,7 +14,7 @@ contents1.style.visibility = 'hidden';
 contents2.style.visibility = 'hidden';
 contents3.style.visibility = 'hidden';
 
-firstNumberInput.addEventListener('change', function(e) {
+firstNumberInput.addEventListener('change', function (e) {
   e.preventDefault();
   document.getElementById(
     'subheadline'
@@ -24,7 +24,7 @@ firstNumberInput.addEventListener('change', function(e) {
   secondNumberInput.setAttribute('max', e.target.value);
 });
 
-secondNumberInput.addEventListener('change', function(e) {
+secondNumberInput.addEventListener('change', function (e) {
   e.preventDefault();
   secondNumberInputAfterSpan.innerText = `고르신 숫자는 ${e.target.value}입니다.`;
   contents1.appendChild(h3part);
@@ -35,7 +35,7 @@ secondNumberInput.addEventListener('change', function(e) {
   thirdNumberInput.setAttribute('max', e.target.value);
 });
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function (e) {
   e.preventDefault();
   contents3.style.visibility = 'visible';
   const mathNumber = parseInt(secondNumberInput.value) + 1;
@@ -52,6 +52,6 @@ form.addEventListener('submit', function(e) {
     document.getElementById(
       'contents4'
     ).innerText = `당신이 졌군요! 다시하세요!`;
-    document.getElementById('contents4').style.color = 'black';
+    document.getElementById('contents4').style.color = 'lightblue';
   }
 });

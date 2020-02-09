@@ -4,5 +4,42 @@
   box-sizing: border-box;
 }
 body {
-  background: url("1.jpg");
+  background: url('1.jpg');
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 70%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: tomato;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+div {
+  padding: 10px;
+}
+
+h1,
+h3,
+#contents2 {
+  color: white;
+}
+input {
+  font-size: 25px;
+  margin: auto;
+  max-width: 50%;
 }
