@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <link rel="stylesheet" href="src/main.css" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Random Number Game</h1>
+    <h2>최대값을 지정해 주세요. 최소값은 0으로 고정입니다.</h2>
+    <input
+      type="number"
+      placeholder="아무 숫자나 써주세요!"
+      name="number"
+      id="number-input"
+    />
+    <br /><br />
+    <div id="subheadline"></div>
+    <div id="contents1">
+      <input type="range" min="0" max="0" id="slider" value="0" />
+      <span id="slider-after"></span>
+    </div>
+    <div id="contents2">
+      <h3>
+        Guess the number:
+        <form>
+          <input
+            type="number"
+            placeholder="마음 속 숫자!"
+            name="numberMind"
+            id="number-mind"
+          /><input type="submit" value="시작!" />
+        </form>
+      </h3>
+    </div>
+    <div id="contents3">
+      <h3>
+        You chose: <span id="chosen-number"></span>, the machine chose:
+        <span id="machine-chosen-number"></span>
+      </h3>
+      <h2 id="result"></h2>
+    </div>
+    <h1 id="contents4"></h1>
+    <script src="index.js"></script>
+  </body>
+</html>

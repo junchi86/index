@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.raw::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+section {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px;
+  background: black;
+  position: relative;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headline {
+  color: white;
+  padding: 20px;
+}
+
+.calculator {
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+  height: 490px;
+  background: rgb(34, 193, 195);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
+  margin: 0 auto;
+  box-shadow: rgba(253, 187, 45, 0.4) 10px 5px 1px;
+}
+
+.result {
+  margin: auto;
+  width: 270px;
+  height: 120px;
+  border-radius: 5px;
+  background: white;
+}
+
+.main-result {
+  padding: 0;
+  margin: 0;
+  line-height: 80px;
+  /* background: beige; */
+  text-align: right;
+  padding: 0 10px;
+  font-size: 30px;
+}
+.sub-result {
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
+  /* background: beige; */
+  text-align: right;
+  padding: 0 10px;
+  font-size: 15px;
+  color: gray;
+}
+button {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  display: block;
+  border-radius: 5px;
+  background: rgba(53, 145, 228, 0.2);
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.a button {
+  color: red;
+  background: white;
+}
+
+.b button {
+  color: black;
+  background: beige;
+}
+.b button:last-child {
+  color: red;
+  background: white;
+}
+.c button {
+  color: black;
+  background: beige;
+}
+.c .equel {
+  height: 200px;
+  display: block;
+  float: right;
+  background: white;
+  color: crimson;
+  font-size: 30px;
+}
+.c .zero {
+  width: 200px;
+}

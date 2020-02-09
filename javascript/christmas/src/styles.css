@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  background: url('christmas-tree-2909020_1920.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: white;
+  text-shadow: -9px 0px 0px red, 9px 0px 0px red, 0px -9px 0px red,
+    0px 9px 0px red;
+}
